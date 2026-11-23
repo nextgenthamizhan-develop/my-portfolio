@@ -1,8 +1,6 @@
 import React from "react";
 import "./Hero.css";
 import profile_img from "../../assets/profile.png";
-// HTML கோப்பை URL-ஆக எடுக்க ?url சேர்க்க வேண்டும்
-import resume_file from "../../assets/resume.html?url";
 
 const Hero = () => {
 
@@ -31,8 +29,9 @@ const Hero = () => {
           Connect With Me
         </div>
 
+        {/* public போல்டரில் உள்ள resume.html கோப்பைச் சரியான பாதையில் திறக்க */}
         <a
-          href={resume_file}
+          href={`${import.meta.env.BASE_URL}resume.html`}
           target="_blank"
           rel="noopener noreferrer"
           className="hero-resume"
