@@ -1,8 +1,8 @@
 import React from "react";
 import "./Hero.css";
 import profile_img from "../../assets/profile.png";
-// உங்கள் Resume PDF கோப்பை Import செய்யவும் (கோப்பின் பெயர் சரியாக உள்ளதா எனச் சரிபார்க்கவும்)
-import resume_pdf from "../../assets/resume.html";
+// HTML கோப்பை URL-ஆக எடுக்க ?url சேர்க்க வேண்டும்
+import resume_file from "../../assets/resume.html?url";
 
 const Hero = () => {
 
@@ -18,7 +18,7 @@ const Hero = () => {
       <img src={profile_img} alt="Profile" />
 
       <h1>
-        <span>I'm Thanujan,</span> Mechatronics Engineer, Software Developer & Innovator In Sri Lanka
+        <span>I'm Thaujan,</span> Mechatronics Engineer, Software Developer & Innovator In Sri Lanka
       </h1>
 
       <p>
@@ -31,9 +31,8 @@ const Hero = () => {
           Connect With Me
         </div>
 
-        {/* My Resume பட்டனை கிளிக் செய்தால் புதிய Tab-இல் PDF திறக்கும் */}
         <a
-          href={resume_pdf}
+          href={resume_file}
           target="_blank"
           rel="noopener noreferrer"
           className="hero-resume"
