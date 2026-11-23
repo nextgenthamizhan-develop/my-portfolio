@@ -1,0 +1,164 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  margin: 80px auto;
+  padding: 0 7%;
+  max-width: 1500px;
+}
+
+.contact-title {
+  position: relative;
+  text-align: center;
+}
+
+.contact-title h1 {
+  padding: 0 30px;
+  font-size: clamp(42px, 6vw, 80px);
+  font-weight: 600;
+}
+
+.contact-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.contact-section {
+  display: flex;
+  gap: 80px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  flex: 1;
+}
+
+.contact-left h1 {
+  font-size: clamp(42px, 6vw, 80px);
+  font-weight: 700;
+  background: linear-gradient(270deg, #85cad2 80%, #1887d5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-left p {
+  max-width: 550px;
+  color: #d8d8d8;
+  font-size: clamp(17px, 2vw, 20px);
+  line-height: 1.7;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  color: #d8d8d8;
+  font-size: clamp(17px, 2vw, 22px);
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  word-break: break-word;
+}
+
+.contact-detail img {
+  width: 24px;
+  flex-shrink: 0;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex: 1;
+}
+
+.contact-right label {
+  color: #d8d8d8;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.contact-right input,
+.contact-right textarea {
+  border: none;
+  width: 100%;
+  border-radius: 6px;
+  background: #32323c;
+  color: #a0a0a0;
+  font-size: 18px;
+  outline: none;
+}
+
+.contact-right input {
+  height: 68px;
+  padding: 0 20px;
+}
+
+.contact-right textarea {
+  min-height: 180px;
+  padding: 22px;
+  resize: vertical;
+}
+
+.contact-submit {
+  border: none;
+  color: white;
+  border-radius: 50px;
+  background: linear-gradient(264deg, #85cad2 -5.09%, #1887d5 106.28%);
+  font-size: 20px;
+  padding: 12px 36px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-submit:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .contact-section {
+    flex-direction: column;
+    gap: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    margin: 55px auto;
+    padding: 0 20px;
+    gap: 45px;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+
+  .contact-left {
+    text-align: center;
+    align-items: center;
+  }
+
+  .contact-detail {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .contact-submit {
+    width: 100%;
+  }
+}
