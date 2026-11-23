@@ -2,7 +2,7 @@ import React from "react";
 import "./Hero.css";
 import profile_img from "../../assets/profile.png";
 // உங்கள் Resume PDF கோப்பை Import செய்யவும் (கோப்பின் பெயர் சரியாக உள்ளதா எனச் சரிபார்க்கவும்)
-import resume_pdf from "../../assets/resume.pdf";
+import resume_pdf from "../../assets/resume.html";
 
 const Hero = () => {
 
@@ -18,7 +18,7 @@ const Hero = () => {
       <img src={profile_img} alt="Profile" />
 
       <h1>
-        <span>I'm Thaujan,</span> Mechatronics Engineer, Software Developer & Innovator In Sri Lanka
+        <span>I'm Thanujan,</span> Mechatronics Engineer, Software Developer & Innovator In Sri Lanka
       </h1>
 
       <p>
